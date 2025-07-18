@@ -1,0 +1,100 @@
+body {
+  background-color: black;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#terminal {
+  border: 2px solid #00ff00;
+  padding: 20px;
+  min-height: 400px;
+  white-space: pre-wrap;
+  overflow-y: auto;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 0 20px #00ff00;
+}
+
+.header {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #00ff00;
+}
+
+.output {
+  white-space: pre-wrap;
+  padding: 20px 0;
+  min-height: 300px;
+  color: #00ff00;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  color: #00ff00;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#output {
+  max-width: 200px; 
+  margin: 0 auto; 
+  text-align: left; 
+  white-space: pre-wrap; 
+  font-family: monospace;
+  padding: 1rem;
+  background-color: #000000;
+  border-radius: 8px;
+  overflow-wrap: break-word;
+}
+
+input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  color: #00ff00;
+  font-size: 18px;
+  outline: none;
+  font-family: inherit;
+}
+.sticker {
+  position: absolute;
+  width: 130px;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.sticker.left {
+  left: 20px;
+  top: 10%;
+}
+
+.sticker.right {
+  right: 50px;
+  top: 30%;
+}
+
+.sticker.center-bottom {
+  bottom: 10px;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+.sticker.below-bottom {
+    bottom: 20px;
+    left: 15%;
+    transform: translateX(-50%);
+}
